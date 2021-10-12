@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+
+$fondo-oscuro: #242424;
+$fondo-claro: #f1f1f1;
+
+// Primarios
+$azul-oscuro: #00338d;
+$azul-medio: #005eb8;
+$azul-claro: #0091da;
+
+// Secundarios
+$morado-oscuro: #470a68;
+$morado-medio: #483698;
+$morado-claro: #6d2077;
+
+// Tercioarios
+$verde-medio: #00a3a1;
+$verde-oscuro: #009a44;
+$verde-claro: #43b02a;
+$amarillo: #eaaa00;
+$naranja: #f68d2e;
+$rojo: #bc204b;
+$rosado: #c6007e;
+
+$coloresEmpresariales :(
+    "azul-oscuro": $azul-oscuro,
+    "azul-medio": $azul-medio,
+    "azul-claro": $azul-claro,
+    "morado-oscuro": $morado-oscuro,
+    "morado-medio": $morado-medio,
+    "morado-claro": $morado-claro,
+    "verde-oscuro": $verde-oscuro,
+    "verde-medio": $verde-medio,
+    "verde-claro": $verde-claro,
+    "amarillo": $amarillo,
+    "naranja": $naranja,
+    "rojo": $rojo,
+    "rosado": $rosado
+);
+
+$roboto-condense: "Roboto Condensed";
+$roboto: "Roboto";
+
+$font-05-rem: ".5rem";
+$font-08-rem: ".8rem";
+$font-1-rem: "1rem";
+$font-125-rem: "1.25rem";
+$font-150-rem: "1.50rem";
+
+
+@font-face {
+  font-family: $roboto;
+  src: url(../src/assets/font/Roboto/Roboto-Black.ttf);
+  src: url(../src/assets/font/Roboto/Roboto-Bold.ttf);
+  src: url(../src/assets/font/Roboto/Roboto-Light.ttf);
+  src: url(../src/assets/font/Roboto/Roboto-Medium.ttf);
+  src: url(../src/assets/font/Roboto/Roboto-Regular.ttf);
+  src: url(../src/assets/font/Roboto/Roboto-Thin.ttf);
+}
+
+@font-face {
+  font-family: $roboto-condense;
+  src: url(../src/assets/font/Roboto_Condensed/RobotoCondensed-Bold.ttf);
+  src: url(../src/assets/font/Roboto_Condensed/RobotoCondensed-Light.ttf);
+  src: url(../src/assets/font/Roboto_Condensed/RobotoCondensed-Regular.ttf);
+}
+

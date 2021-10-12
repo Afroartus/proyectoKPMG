@@ -1,0 +1,42 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "variables-kpmg";
+@import "mixin-kpmg";
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: $roboto;
+}
+
+.navbar {
+  background: transparent !important;
+  .navbar-brand {
+    img {
+      height: 2.2rem;
+    }
+  }
+}
+
+.img-principal {
+  .container-hidden {
+    height: 90vh;
+    overflow: hidden;
+    .img-computador {
+      background: url("../src/assets/img/computer-5.jpg");
+      width: 120%;
+      background-position: center;
+      background-repeat: no-repeat;
+     background-attachment: fixed;
+    }
+    .texto-principal{
+      color: $fondo-claro;
+    }
+  }
+  
+}
+
+table .sla {
+  thead {
+    background: $azul-oscuro;
+  }
+}

@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- -->
+    <link rel="stylesheet" type="text/css" href="../css/jquery.dataTables.css"
+
+    <!-- -->
+    
+
+    <!-- -->
+    <link rel="stylesheet" href="../css/style.css">
+
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+
+    <div class="d-flex align-items-center m-4">
+        
+        <div class="nav flex-column justify-content-center nav-pills col-md-3" id="v-pills-tab" role="tablist"
+            aria-orientation="vertical">
+                <h3 class="">Tiempos de Solucion (SLA)</h3>
+            <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home"
+                type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Tiempo de soucion</button>
+            <button class="nav-link " id="v-pills-priority-tab" data-bs-toggle="pill" data-bs-target="#v-pills-priority"
+                type="button" role="tab" aria-controls="v-pills-priority" aria-selected="false">Prioridad</button>
+            <button class="nav-link" id="v-pills-one-hour-tab" data-bs-toggle="pill" data-bs-target="#v-pills-one-hour"
+                type="button" role="tab" aria-controls="v-pills-one-hour" aria-selected="false">1 Hora</button>
+            <button class="nav-link" id="v-pills-four-hour-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-four-hour" type="button" role="tab" aria-controls="v-pills-four-hour"
+                aria-selected="false">4 Horas</button>
+            <button class="nav-link" id="v-pills-eight-hour-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-eight-hour" type="button" role="tab" aria-controls="v-pills-eight-hour"
+                aria-selected="false">8 Horas</button>
+            <button class="nav-link" id="v-pills-twenty-four-hour-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-twenty-four-hour" type="button" role="tab"
+                aria-controls="v-pills-twenty-four-hour" aria-selected="false">24 Horas</button>
+        </div>
+        <div class="tab-content col-md-9" id="v-pills-tabContent">
+
+            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+
+                <div class="col-md-10 mx-4">
+
+                    <h2 class="my-5">
+                        Tiempos de solucion
+                    </h2>
+
+                    <p>
+                        Los tiempos de solución a tus solicitudes varían según su
+                        complejidad y su prioridad, trabajamos para dar respuesta a tus
+                        incidentes de 1 a 8 horas laborales y tus requerimientos de 1 a
+                        48 horas laborales. En caso de que existan
+                        excepciones te notificaremos.
+                    </p>
+                </div>
+
+
+            </div>
+
+            <div class="tab-pane fade show" id="v-pills-priority" role="tabpanel"
+                aria-labelledby="v-pills-priority-tab">
+
+                <div class="col-md-10 mx-auto my-auto">
+
+                    <table class="table table-borderless">
+                        <thead>
+                            <tr class="color-blue text-white">
+                                <th scope="col">Prioridad </br> </th>
+                                <th scope="col">Tiempo de Atención </br> (Minutos)</th>
+                                <th scope="col">Tiempo de resolución </br> (horas) </th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-white">
+                            <tr>
+                                <th>Critica</th>
+                                <td>15</td>
+                                <td>1 Hora</td>
+                            </tr>
+                            <tr>
+                                <th>Alta</th>
+                                <td>15</td>
+                                <td>4 Horas</td>
+                            </tr>
+                            <tr>
+                                <th>Media</th>
+                                <td>15</td>
+                                <td>8 Horas</td>
+                            <tr>
+                                <th>Baja</th>
+                                <td>60</td>
+                                <td>24 Horas</td>
+                        </tbody>
+                    </table>
+
+                </div>
+
+            </div>
+
+            <div class="tab-pane fade" id="v-pills-one-hour" role="tabpanel" aria-labelledby="v-pills-one-hour-tab">
+
+                <div class="col-md-10 mx-auto my-auto m-4">
+
+                    <table id="tabla-one-hour" class="table table-borderless" data-page-length='7'>
+                        <thead class="color-blue text-white"></thead>
+                        <tbody class="text-white"></tbody>
+                    </table>
+                </div>
+
+            </div>
+
+            <div class="tab-pane fade" id="v-pills-four-hour" role="tabpanel" aria-labelledby="v-pills-four-hour-tab">
+
+                <div class="col-md-10 mx-auto my-auto">
+                    <table class="table table-borderless">
+                        <thead>
+                            <tr class="color-blue text-white">
+                                <th scope="col">Categoría</th>
+                                <th scope="col">Subcategoría</th>
+                                <th scope="col">Tipo</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-white">
+                            <tr>
+                                <th>Requerimiento</th>
+                                <td>Accesos</td>
+                                <td>Usuario Internet visitantes</td>
+                            </tr>
+                            <tr>
+                                <th>Requerimiento</th>
+                                <td>Telefonía fija</td>
+                                <td>Habilitar extensión</td>
+                            </tr>
+                            <tr>
+                                <th>Requerimiento</th>
+                                <td>Telefonía fija</td>
+                                <td>Cambiar nombre en la Extensión</td>
+                            <tr>
+                                <th>Incidente</th>
+                                <td>Modem -Internet Móvil </td>
+                                <td>Reportar falla</td>
+                            </tr>
+                            <tr>
+                                <th>Requerimiento</th>
+                                <td>Telefonía fija</td>
+                                <td>Formateo de extensión</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+            <div class="tab-pane fade" id="v-pills-eight-hour" role="tabpanel" aria-labelledby="v-pills-eight-hour-tab">
+
+                <table id="tabla-eight-hour" class="table table-borderless" data-page-length='7'>
+                    <thead class="color-blue text-white">
+                    </thead>
+                    <tbody class="text-white"></tbody>
+                </table>
+            </div>
+
+            <div class="tab-pane fade" id="v-pills-twenty-four-hour" role="tabpanel"
+                aria-labelledby="v-pills-twenty-four-hour-tab">
+
+                <div class="col-md-10 mx-auto my-auto m-4">
+
+                    <table id="tabla-twenty-four-hour" class="table table-borderless" data-page-length='6'>
+                        <thead class="text-white color-blue"></thead>
+                        <tbody class="text-white"></tbody>
+
+                    </table>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+</body>
+
+
+<!-- -->
+<script src="../js/jquery-3.6.0.js"></script>
+
+
+<!--  -->
+<script src="../node_modules/datatables.net/js/jquery.dataTables.min.js"></script>
+
+
+
+<!-- -->
+
+<script src="../node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+<!-- -->
+<script src="../js/main.js"></script>
+
+
+
+</html>
