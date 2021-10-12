@@ -9,34 +9,112 @@ body {
 }
 
 .navbar {
-  background: transparent !important;
+  display: inline-block;
+  position: absolute;
   .navbar-brand {
     img {
-      height: 2.2rem;
+      height: 3.8rem;
+    }
+  }
+  .nav-item {
+    .nav-link {
+      color: $fondo-claro;
+      font-size: $font-1-rem;
     }
   }
 }
 
 .img-principal {
   .container-hidden {
-    height: 90vh;
+    background-image: url(../src/assets/img/computer-2.jpg);
+    background-size: 150%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     overflow: hidden;
-    .img-computador {
-      background: url("../src/assets/img/computer-5.jpg");
-      width: 120%;
-      background-position: center;
-      background-repeat: no-repeat;
-     background-attachment: fixed;
-    }
-    .texto-principal{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .texto-principal {
+      text-align: center;
+      width: 500px;
       color: $fondo-claro;
+      .bienvenidos {
+        font-size: 4rem;
+        font-weight: 600;
+      }
+      #typed {
+        font-size: $font-125-rem;
+        font-weight: 200;
+      }
     }
   }
-  
 }
 
-table .sla {
+
+.contenedor-texto-informacion-ti {
+  // background: rgb(0,51,141);
+  // background: linear-gradient(90deg, rgba(0,51,141,1) 10%, rgba(72,54,152,1) 10%);
+
+  background: #f1f1f1;
+  .texto-informacion-ti {
+    font-family: $roboto-condense;
+    font-size: $font-225-rem;
+    font-weight: 400;
+    text-align: justify;
+  }
+}
+
+// Inicio Estilos informacion vicepresidenta
+
+.informacion-usuario {
+  height: 300px;
+  background: #f0f0f0;
+  .img-informacion-usuario.img-1{
+  background-image: url(../src/assets/img/woman-2.jpg);
+  }
+  .img-informacion-usuario.img-2{
+    background-image: url(../src/assets/img/men-2.jpg);
+    }
+  .img-informacion-usuario{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 300px;
+    border: transparent solid 1px;
+    border-radius: 0.8rem;
+  }
+  .texto-usuario{
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+  .informacion-usuario-bottom{
+    text-align: center;
+    
+  }
+}
+
+// Fin Estilos informacion vicepresidenta
+
+.table-sla{
+ table.sla {
+   text-align: center;
   thead {
     background: $azul-oscuro;
+    color: $fondo-claro;
+  }
+  tbody{
+    font-size: $roboto-condense;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+}
+}
+@media (min-width: 576px) {
+  .img-principal {
+    .container-hidden {
+      height: 100vh;
+    }
   }
 }

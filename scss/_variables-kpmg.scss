@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
 
 $fondo-oscuro: #242424;
-$fondo-claro: #f1f1f1;
+$fondo-claro: #fefefe;
 
 // Primarios
 $azul-oscuro: #00338d;
@@ -44,9 +44,18 @@ $roboto: "Roboto";
 
 $font-05-rem: ".5rem";
 $font-08-rem: ".8rem";
-$font-1-rem: "1rem";
+$font-1-rem: "1.0rem";
 $font-125-rem: "1.25rem";
 $font-150-rem: "1.50rem";
+$font-175-rem: "1.75rem";
+$font-2-rem: "2.0rem";
+$font-225-rem: "2.25rem";
+$font-250-rem: "2.50rem";
+$font-275-rem: "2.75rem";
+$font-3-rem: "3.0rem";
+
+
+
 
 
 @font-face {

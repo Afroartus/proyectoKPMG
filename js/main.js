@@ -1,3 +1,10 @@
+var typed = new Typed('#typed',{
+  strings: ['A servicios de tecnología.', 'Guia de servicios de tecnología.' ],
+  typeSpeed: 200,
+  backSpeed: 50,
+  loop: true
+});
+
 var tiemposDeSolucion = [
   ["Crítica", "15", "1"],
   ["Alta", "15", "4"],
@@ -98,7 +105,7 @@ var tiempoSolucion24Hora = [
   ["Requerimiento", "Computador", "Instalación Software No Estándar"],
 ];
 
-let tableTiemposDeSolucion = new DataTable("#tabla-tiempos-de-solucion", {
+let tablaTiemposDeSolucion = new DataTable("#tabla-tiempos-de-solucion", {
   lengthChange: false,
   processing: false,
   ordenig: false,
@@ -114,14 +121,14 @@ let tableTiemposDeSolucion = new DataTable("#tabla-tiempos-de-solucion", {
   ],
 });
 
-let table = new DataTable("#tabla-una-hora", {
+let tablaUnaHora = new DataTable("#tabla-una-hora", {
   lengthChange: false,
   processing: false,
   ordenig: false,
   searching: true,
   paging: true,
   info: false,
-  scrollY: 330,
+  scrollY: 300,
   dom: "<'mx-auto col-md-12'ftp>",
   data: tiempoSolucion1Hora,
   columns: [
@@ -131,7 +138,7 @@ let table = new DataTable("#tabla-una-hora", {
   ],
 });
 
-let table_2 = new DataTable("#tabla-eight-hour", {
+let tableCuatroHora = new DataTable("#tabla-cuatro-hora", {
   lengthChange: false,
   processing: false,
   ordenig: false,
@@ -140,7 +147,7 @@ let table_2 = new DataTable("#tabla-eight-hour", {
   info: false,
   scrollY: 330,
   dom: "<'mx-auto col-md-11'ftp>",
-  data: tableTres,
+  data: tiempoSolucion4Hora,
   columns: [
     { title: "Categoría" },
     { title: "Subcategoría" },
@@ -166,6 +173,3 @@ let table_3 = new DataTable("#tabla-twenty-four-hour", {
 });
 
 
-// var typed = new Typed('#typed',{
-//   strings: ['gato', 'perro']
-// });

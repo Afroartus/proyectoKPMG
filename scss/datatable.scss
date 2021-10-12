@@ -15,29 +15,29 @@ $table-header-border: 1px solid $fondo-oscuro;
  
 // Border of rows / cells
 // Borde de filas / celdas
-$table-body-border: 1px solid #dddddd ;
+$table-body-border: 1px solid $fondo-oscuro;
  
 // Row background colour (hover, striping etc are all based on this colour and
 // calculated automatically)
 // El color de fondo de la fila (el desplazamiento, las rayas, etc. se basan en este color y
 // calculado automáticamente)
-$table-row-background: #ffffff ;
+$table-row-background: transparent ;
  
 // Row colour, when selected (tr.selected)
 // Color de la fila, cuando se selecciona  (tr.selected)
-$table-row-selected: #b0bed9 ;
+$table-row-selected: $fondo-oscuro ; //no sirve
  
 // Text colour of the interaction control elements (info, filter, paging etc)
 // Color del texto de los elementos de control de interacción (información, filtro, paginación, etc.)
-$table-control-color: #333333;
+$table-control-color: $fondo-oscuro;
  
 // Highlight colour of the paging button for the current page
 // Resalte el color del botón de paginación de la página actual
-$table-paging-button-active: #dcdcdc;
+$table-paging-button-active: $azul-medio;
  
 // Hover colour of paging buttons on mouse over
 // Coloca el mouse sobre el color de los botones de paginación
-$table-paging-button-hover: #111111 ;
+$table-paging-button-hover: $azul-oscuro ;
  
 // Colour to use when shading
 // Color para usar al sombrear
