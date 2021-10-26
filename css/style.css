@@ -10726,6 +10726,32 @@ body {
   text-align: justify;
 }
 
+.caja-flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.servicios-tecnologia .texto-servicios-tecnologia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.servicios-tecnologia .texto-servicios-tecnologia h6 a, .servicios-tecnologia .texto-servicios-tecnologia .h6 a {
+  font-family: "Roboto Condensed";
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: #00338d;
+}
+
+.servicios-tecnologia .texto-servicios-tecnologia p {
+  font-family: "Roboto Condensed";
+  font-size: "2.25rem";
+  font-weight: 400;
+  text-align: justify;
+}
+
 .informacion-usuario {
   height: 300px;
   background: #f0f0f0;
@@ -10770,6 +10796,57 @@ body {
   font-size: "Roboto Condensed";
   font-size: 1rem;
   font-weight: 600;
+}
+
+.degradado-azul {
+  background: #00338d;
+  background: linear-gradient(133deg, #00338d 0%, #0091da 100%);
+}
+
+.degradado-morado {
+  background: #470a68;
+  background: linear-gradient(133deg, #470a68 0%, #6d2077 100%);
+}
+
+.degradado-morado-azul {
+  background: #483698;
+  background: linear-gradient(133deg, #483698 0%, #0091da 100%);
+}
+
+.botones-direccionamiento .btn-primary {
+  border: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00338d",endColorstr="#0091da",GradientType=1);
+}
+
+.botones-direccionamiento .btn-primary img {
+  height: 100px;
+}
+
+.botones-direccionamiento .btn-primary span.boton-kpmg {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.botones-direccionamiento .btn-primary span.boton-one-key {
+  display: block;
+}
+
+footer {
+  height: 200px;
+}
+
+footer .fondo-color-azul-oscuro {
+  background: #00338d;
+}
+
+footer .fondo-color-azul-claro {
+  background: #0091da;
+  height: 200px;
+}
+
+footer .fondo-color-azul-claro img {
+  height: 5.2rem;
 }
 
 @media (min-width: 576px) {

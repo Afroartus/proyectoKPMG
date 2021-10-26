@@ -52,7 +52,6 @@ body {
   }
 }
 
-
 .contenedor-texto-informacion-ti {
   // background: rgb(0,51,141);
   // background: linear-gradient(90deg, rgba(0,51,141,1) 10%, rgba(72,54,152,1) 10%);
@@ -65,19 +64,45 @@ body {
     text-align: justify;
   }
 }
+.caja-flex{
+  display: flex;
+  justify-content: space-around;
+}
+.servicios-tecnologia {
+  .texto-servicios-tecnologia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h6 {
+      a {
+        font-family: $roboto-condense;
+        font-size: 1.2rem;
+        font-weight: 500;
+        text-decoration: none;
+        color: $azul-oscuro;
+      }
+    }
+    p {
+      font-family: $roboto-condense;
+      font-size: $font-225-rem;
+      font-weight: 400;
+      text-align: justify;
+    }
+  }
+}
 
 // Inicio Estilos informacion vicepresidenta
 
 .informacion-usuario {
   height: 300px;
   background: #f0f0f0;
-  .img-informacion-usuario.img-1{
-  background-image: url(../src/assets/img/woman-2.jpg);
+  .img-informacion-usuario.img-1 {
+    background-image: url(../src/assets/img/woman-2.jpg);
   }
-  .img-informacion-usuario.img-2{
+  .img-informacion-usuario.img-2 {
     background-image: url(../src/assets/img/men-2.jpg);
-    }
-  .img-informacion-usuario{
+  }
+  .img-informacion-usuario {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -85,32 +110,83 @@ body {
     border: transparent solid 1px;
     border-radius: 0.8rem;
   }
-  .texto-usuario{
+  .texto-usuario {
     font-size: 1.2rem;
     text-align: justify;
   }
-  .informacion-usuario-bottom{
+  .informacion-usuario-bottom {
     text-align: center;
-    
   }
 }
 
 // Fin Estilos informacion vicepresidenta
 
-.table-sla{
- table.sla {
-   text-align: center;
-  thead {
+.table-sla {
+  table.sla {
+    text-align: center;
+    thead {
+      background: $azul-oscuro;
+      color: $fondo-claro;
+    }
+    tbody {
+      font-size: $roboto-condense;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+  }
+}
+
+.degradado-azul{
+  background: rgb(0,51,141);
+background: linear-gradient(133deg, rgba(0,51,141,1) 0%, rgba(0,145,218,1) 100%);
+}
+
+.degradado-morado{
+  background: rgb(71,10,104);
+background: linear-gradient(133deg, rgba(71,10,104,1) 0%, rgba(109,32,119,1) 100%);
+}
+
+.degradado-morado-azul{
+  background: rgb(72,54,152);
+background: linear-gradient(133deg, rgba(72,54,152,1) 0%, rgba(0,145,218,1) 100%);
+}
+
+.botones-direccionamiento{
+  .btn-primary{
+    border: none;
+
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00338d",endColorstr="#0091da",GradientType=1);
+    img{
+      height: 100px;
+    }
+
+    span.boton-kpmg{
+      display: block;
+      font-size: 1rem;
+      font-weight: 600;
+      
+    }
+    span.boton-one-key{
+      display: block;
+      
+    }
+  }
+}
+
+footer {
+  height: 200px;
+  .fondo-color-azul-oscuro {
     background: $azul-oscuro;
-    color: $fondo-claro;
   }
-  tbody{
-    font-size: $roboto-condense;
-    font-size: 1rem;
-    font-weight: 600;
+  .fondo-color-azul-claro {
+    background: $azul-claro;
+    height: 200px;
+    img {
+      height: 5.2rem;
+    }
   }
 }
-}
+
 @media (min-width: 576px) {
   .img-principal {
     .container-hidden {

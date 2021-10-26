@@ -1,9 +1,50 @@
+var elements = document.querySelectorAll('.bienvenidos');
+
+anime({
+  targets: elements,
+  translateX: 370,
+  translateY: -250,
+  delay:1000,
+  endDelay: 1000,
+  easing: 'easeInOutSine'
+});
+
 var typed = new Typed('#typed',{
   strings: ['A servicios de tecnología.', 'Guia de servicios de tecnología.' ],
   typeSpeed: 200,
   backSpeed: 50,
   loop: true
 });
+
+anime({
+  targets: '.typed',
+  translateX: 370,
+  translateY: -250,
+  delay:1000,
+  endDelay: 50
+  
+});
+
+// let animado = document.querySelectorAll(".caja-flex");
+
+//   function mostrarScroll() {
+//     let scrollTop = document.documentElement.scrollTop;
+//     for (var i = 0; i < animado.length; i++){
+//       let alturaAnimado = animado[i].offsetTop;
+//       if(alturaAnimado - 200 < scrollTop){
+//         anime({
+//           targets: animado[i],
+//           translateX: 370,
+//           translateY: -250,
+//           easing: 'easeInOutSine'
+//         });
+//       }
+//     }
+//   }
+
+//   window.addEventListener('scroll', mostrarScroll);
+
+
 
 var tiemposDeSolucion = [
   ["Crítica", "15", "1"],
